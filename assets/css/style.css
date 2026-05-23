@@ -5,6 +5,13 @@ removes default style settings.*/
   margin: 0;
   box-sizing: border-box;
 }
+/*General Styles*/
+body{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    color:#3a3a3a;
+}
 /*header styling*/
 header {
   background-color: lightcoral;
@@ -12,6 +19,7 @@ header {
 /*main styling*/
 main {
   background-color: lightblue;
+  flex: 1 0 auto;
 }
 /*footer styling*/
 footer {
