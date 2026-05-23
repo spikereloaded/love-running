@@ -20,6 +20,9 @@ body {
 header {
   background-color: lightcoral;
 }
+h1{
+    font-family: 'Osawld', sans-serif  ;
+}
 /*main styling*/
 main {
   background-color: lightblue;
