@@ -1,0 +1,19 @@
+/*asteriks targets all elements as it's a wildcard selector. 
+removes default style settings.*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/*header styling*/
+header {
+  background-color: lightcoral;
+}
+/*main styling*/
+main {
+  background-color: lightblue;
+}
+/*footer styling*/
+footer {
+  background-color: orange;
+}
