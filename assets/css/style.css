@@ -1,3 +1,6 @@
+/*Importing fonts from Google Fonts.*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Work+Sans:ital@1&display=swap');
+
 /*asteriks targets all elements as it's a wildcard selector. 
 removes default style settings.*/
 * {
@@ -6,11 +9,12 @@ removes default style settings.*/
   box-sizing: border-box;
 }
 /*General Styles*/
-body{
-    min-height: 100vh;
-    display:flex;
-    flex-direction: column;
-    color:#3a3a3a;
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #3a3a3a;
+  font-family:'Lato', sans-serif;
 }
 /*header styling*/
 header {
