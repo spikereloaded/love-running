@@ -17,9 +17,8 @@ body {
   font-family:'Lato', sans-serif;
 }
 h1, h2, h3{
-    font-family: 'Osawld', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    letter-spacing: 2px;
     color:#252525;
 }
 .hidden{
@@ -35,7 +34,7 @@ header {
   padding: 0 1rem;
   position: fixed;
   width:100%;
-  box-shadow: 0 2px 5px #3a3a3a;
+  box-shadow: 0 2px 2px #3a3a3a;
   display:flex;
   justify-content: space-between;
   align-items: baseline;
@@ -85,7 +84,7 @@ main {
   flex: 1 0 auto;
   flex-direction: column;
   display:flex;
-  margin-top: 55px; /* To prevent content from being hidden behind the fixed header */
+  margin-top: 40px; /* To prevent content from being hidden behind the fixed header */
 }
 
 /*hero section*/
