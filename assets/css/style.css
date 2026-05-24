@@ -74,9 +74,15 @@ nav{
 }
 /*main styling*/
 main {
-  background-color: lightblue;
   flex: 1 0 auto;
   margin-top: 40px; /* To prevent content from being hidden behind the fixed header */
+}
+
+/*hero section*/
+#hero {
+    height: 600px;
+    width:100%;
+    background: url("../images/hero-image.webp") no-repeat center center/cover;
 }
 /*footer styling*/
 #footer-icons{
