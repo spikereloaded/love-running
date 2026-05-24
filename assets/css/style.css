@@ -83,6 +83,8 @@ nav{
 /*main styling*/
 main {
   flex: 1 0 auto;
+  flex-direction: column;
+  display:flex;
   margin-top: 55px; /* To prevent content from being hidden behind the fixed header */
 }
 
@@ -173,6 +175,44 @@ main {
     line-height:1em;
 
 
+}
+
+#signup{
+    background-image: url(../images/signup-image.webp);
+    background-size:cover;
+    background-position:75%;
+    flex-grow:1;
+    padding:20px 10% 0 10%;
+
+}
+#signup-form{
+    color: white;
+    padding:30px;
+    background-color:rgba(60,60,60,.6);
+}
+#signup h2{
+    color:#fafafa;
+    margin-bottom:20px;
+}
+.radio-buttons{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+}
+.text-input{
+    background: transparent;
+    color:#fafafa;
+    border-radius: 2px;
+    border:1px solid #fafafa;
+    margin:5px 0 20px 0;
+}
+.join-button{
+    padding:15px 32px;
+    border-radius:2px;
+    background-color: #454b1b;
+    color:#fafafa;
+    font-size:100%;
+    margin-top:20px;
 }
 /*footer styling*/
 #footer-icons{
