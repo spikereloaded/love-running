@@ -184,10 +184,51 @@ main {
     width:300px;
     right:50px;
    }
+   #benefits-physical, #benefits-mental{
+    display:flex;
+    flex-direction: column;
+    width:100%;
+   }
+   #benefits-physical > div, #benefits-mental > div{
+    width:75%;
+   }
+   #benefits-mental > div{
+    text-align: end;
+    align-self:flex-end
+   }
+
 }
 
 @media screen and (min-width:992px){
     #menu a:hover{
         border-bottom: 1px solid #3a3a3a ;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    #benefits{
+        display:flex;
+        flex-direction:row;
+    }
+    #benefits > div{
+        flex:1;
+    }
+    #benefits-physical, #benefits-mental, #benefits-image{
+        width:30%;
+    }
+    #benefits-mental{
+        order:2;
+    }
+    #benefits-mental > div{
+        align-self:flex-start;
+    }
+    #benefits-physical{
+        order:0;
+    }
+    #benefits-physical > div{
+        align-self:flex-end;
+    }
+    #benefits-image{
+        order:1;
     }
 }
