@@ -141,6 +141,27 @@ main {
     max-width:300px;
     max-height:300px;
 }
+#times{
+    background:url("../images/dublin-city.webp") no-repeat center center/cover;
+    display:flex;
+    flex-flow:row wrap;
+}
+#times div {
+    color: #fafafa;
+    background-color: rgba(0,0,0,.6);
+    padding:15px;
+    text-align: center;
+    /*This will stop two divs showing next to eachother on screens smaller than 400px wide
+    each div will expand to fill the horizontal space on its row when necessary*/
+    flex-basis:200px;
+    flex-grow: 1;
+    border: 2px solid white;
+}
+#times h3{
+    color:#fafafa;
+
+}
+
 /*footer styling*/
 #footer-icons{
     text-align:center;
