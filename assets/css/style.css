@@ -83,7 +83,7 @@ nav{
 /*main styling*/
 main {
   flex: 1 0 auto;
-  margin-top: 40px; /* To prevent content from being hidden behind the fixed header */
+  margin-top: 55px; /* To prevent content from being hidden behind the fixed header */
 }
 
 /*hero section*/
@@ -164,7 +164,16 @@ main {
     color:#fafafa;
 
 }
+/*gallery styles*/
+#photos{
+    line-height: 0;
+}
+#photos > img{
+    width:100%;
+    line-height:1em;
 
+
+}
 /*footer styling*/
 #footer-icons{
     text-align:center;
