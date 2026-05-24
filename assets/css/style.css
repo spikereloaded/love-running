@@ -205,6 +205,9 @@ main {
     border-radius: 2px;
     border:1px solid #fafafa;
     margin:5px 0 20px 0;
+     display: block;
+    width:100%;
+    height:30px;
 }
 .join-button{
     padding:15px 32px;
@@ -212,7 +215,7 @@ main {
     background-color: #454b1b;
     color:#fafafa;
     font-size:100%;
-    margin-top:20px;
+    margin:20px auto 0 auto;
 }
 /*footer styling*/
 #footer-icons{
@@ -277,6 +280,25 @@ main {
    }
    #photos{
     column-count: 3;
+   }
+   #signup{
+    background-position: center;
+    position: relative;
+   }
+   #signup-form{
+    position:absolute;
+    max-width:400px;
+    left:10%;
+    top:150px;
+   }
+   .text-input{
+   
+    margin:2px 0 15px 0;
+    height:30px;
+    padding:0 10px;
+   }
+   .text-input:hover{
+    border-color:#f16c6b;
    }
 }
 
