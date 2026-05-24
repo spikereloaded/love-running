@@ -79,15 +79,17 @@ main {
   margin-top: 40px; /* To prevent content from being hidden behind the fixed header */
 }
 /*footer styling*/
-footer {
-  background-color: orange;
-  display:flex;
-}
 #footer-icons{
+    text-align:center;
+    padding:20px 0 ;
     display:flex;
     list-style-type: none;
     justify-content: space-evenly;
-    align-items: center;
+}
+#footer-icons a {
+    font-size:150%;
+    padding:5%;
+    color:#3a3a3a;
 }
 @media screen and (min-width: 768px) {
     /*For larger screens, display the nav as a horizontal menu*/
