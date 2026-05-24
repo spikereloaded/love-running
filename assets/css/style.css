@@ -23,6 +23,10 @@ header {
   position: fixed;
   width:100%;
   box-shadow: 0 2px 5px #3a3a3a;
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  z-index: 99;
 }
 header a{
     text-decoration: none;
@@ -45,10 +49,34 @@ h1{
     letter-spacing: 2px;
     color:#252525;
 }
+
+/*.navbar styles with dropdown toggle*/
+nav{
+    position: absolute;
+    background-color: #FFFFFF;
+    width:100%;
+    left:0;
+    padding:0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top:100%;
+}
+/*nav toggle for mobile view*/
+#nav-toggle:checked ~ nav {
+    display: block;
+}
+#nav-toggle {
+    display: none;
+}
+.nav-toggle-label {
+    font-size: 2rem;
+    cursor: pointer;
+}
 /*main styling*/
 main {
   background-color: lightblue;
   flex: 1 0 auto;
+  margin-top: 40px; /* To prevent content from being hidden behind the fixed header */
 }
 /*footer styling*/
 footer {
