@@ -1,5 +1,5 @@
 /*Importing fonts from Google Fonts.*/
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Work+Sans:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Work+Sans:ital@1&display=swap");
 
 /*asteriks targets all elements as it's a wildcard selector. 
 removes default style settings.*/
@@ -14,326 +14,381 @@ body {
   display: flex;
   flex-direction: column;
   color: #3a3a3a;
-  font-family:'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
-h1, h2, h3{
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    color:#252525;
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  color: #252525;
 }
-.hidden{
-    display:none;
+.hidden {
+  display: none;
 }
-hr{
-    border-top:1px solid #3a3a3a;
-    margin:5px 0;
+hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
+}
+blockquote {
+  font-style: italic;
+}
+cite {
+  margin-top: 15px;
+  display: block;
 }
 /*header styling*/
 header {
-  background-color: #FFFFFF ;
+  background-color: #ffffff;
   padding: 0 1rem;
   position: fixed;
-  width:100%;
+  width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: baseline;
   z-index: 99;
 }
-header a{
-    text-decoration: none;
-    color:inherit;
+header a {
+  text-decoration: none;
+  color: inherit;
 }
-#menu{
-    font-size: 110%;
-    letter-spacing: 4px;
-    list-style-type: none;
+#menu {
+  font-size: 110%;
+  letter-spacing: 4px;
+  list-style-type: none;
 }
-#menu > li{
-    margin-bottom:1em;
+#menu > li {
+  margin-bottom: 1em;
 }
-.active{
-    border-bottom: 1px solid #3a3a3a ;
+.active {
+  border-bottom: 1px solid #3a3a3a;
 }
-
 
 /*.navbar styles with dropdown toggle*/
-nav{
-    position: absolute;
-    background-color: #FFFFFF;
-    width:100%;
-    left:0;
-    padding:0 1rem;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: none;
-    top:100%;
+nav {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  padding: 0 1rem;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
 }
 /*nav toggle for mobile view*/
 #nav-toggle:checked ~ nav {
-    display: block;
+  display: block;
 }
 #nav-toggle {
-    display: none;
+  display: none;
 }
 .nav-toggle-label {
-    font-size: 2rem;
-    cursor: pointer;
+  font-size: 2rem;
+  cursor: pointer;
 }
 /*main styling*/
 main {
   flex: 1 0 auto;
   flex-direction: column;
-  display:flex;
+  display: flex;
   margin-top: 40px; /* To prevent content from being hidden behind the fixed header */
 }
 
 /*hero section*/
 #hero {
-    height: 600px;
-    width:100%;
-    background: url("../images/hero-image.webp") no-repeat center center/cover;
-    position: relative;
+  height: 600px;
+  width: 100%;
+  background: url("../images/hero-image.webp") no-repeat center center/cover;
+  position: relative;
 }
-#cover-text{
-    background-color:rgba(241,109,107,.7);
-    font-size:130%;
-    position: absolute;
-    bottom:30px;
-    width:80%;
-    min-height:200px;
-    padding-top:40px;
-    padding-left:10px;
+#cover-text {
+  background-color: rgba(241, 109, 107, 0.7);
+  font-size: 130%;
+  position: absolute;
+  bottom: 30px;
+  width: 80%;
+  min-height: 200px;
+  padding-top: 40px;
+  padding-left: 10px;
 }
-#cover-text >h2, #cover-text > h3{
-    color: white
+#cover-text > h2,
+#cover-text > h3 {
+  color: white;
 }
 /*reasons styling*/
-#reasons{
-    width:90%;
-    margin:20px auto;
-
+#reasons {
+  width: 90%;
+  margin: 20px auto;
 }
-#reasons >h2{
-    font-size:280%;
-    text-align: center;
-    margin-bottom:20px;
+#reasons > h2 {
+  font-size: 280%;
+  text-align: center;
+  margin-bottom: 20px;
 }
-#benefits{
-    width:90%;
-    margin:20px auto;
+#benefits {
+  width: 90%;
+  margin: 20px auto;
 }
-#benefits-physical > div, #benefits-mental > div{
-    line-height:20px;
-    margin-bottom:20px;
-    
+#benefits-physical > div,
+#benefits-mental > div {
+  line-height: 20px;
+  margin-bottom: 20px;
 }
 #benefits p {
-    padding:0 20px;
-    font-size:90%;
+  padding: 0 20px;
+  font-size: 90%;
 }
-#benefits-image{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+#benefits-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#circle-cover-bg{
-    background: url("../images/reasons-image.webp") no-repeat top center/cover;
-    width:90vw;
-    height:90vw;
-    border-radius:50%;
-    margin-bottom:20px;
-    max-width:300px;
-    max-height:300px;
+#circle-cover-bg {
+  background: url("../images/reasons-image.webp") no-repeat top center/cover;
+  width: 90vw;
+  height: 90vw;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  max-width: 300px;
+  max-height: 300px;
 }
-#times{
-    background:url("../images/dublin-city.webp") no-repeat center center/cover;
-    display:flex;
-    flex-flow:row wrap;
+#times {
+  background: url("../images/dublin-city.webp") no-repeat center center/cover;
+  display: flex;
+  flex-flow: row wrap;
 }
 #times div {
-    color: #fafafa;
-    background-color: rgba(0,0,0,.6);
-    padding:15px;
-    text-align: center;
-    /*This will stop two divs showing next to eachother on screens smaller than 400px wide
+  color: #fafafa;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 15px;
+  text-align: center;
+  /*This will stop two divs showing next to eachother on screens smaller than 400px wide
     each div will expand to fill the horizontal space on its row when necessary*/
-    flex-basis:200px;
-    flex-grow: 1;
-    border: 2px solid white;
+  flex-basis: 200px;
+  flex-grow: 1;
+  border: 2px solid white;
 }
-#times h3{
-    color:#fafafa;
-
+#times h3 {
+  color: #fafafa;
 }
 /*gallery styles*/
-#photos{
-    line-height: 0;
+#photos {
+  line-height: 0;
 }
-#photos > img{
-    width:100%;
-    line-height:1em;
-
-
+#photos > img {
+  width: 100%;
+  line-height: 1em;
 }
 
-#signup{
-    background-image: url(../images/signup-image.webp);
-    background-size:cover;
-    background-position:75%;
-    flex-grow:1;
-    padding:20px 10% 0 10%;
+#signup {
+  background-image: url(../images/signup-image.webp);
+  background-size: cover;
+  background-position: 75%;
+  flex-grow: 1;
+  padding: 20px 10% 0 10%;
+}
+#signup-form {
+  color: white;
+  padding: 30px;
+  background-color: rgba(60, 60, 60, 0.6);
+}
+#signup h2 {
+  color: #fafafa;
+  margin-bottom: 20px;
+}
+.radio-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.text-input {
+  background: transparent;
+  color: #fafafa;
+  border-radius: 2px;
+  border: 1px solid #fafafa;
+  margin: 5px 0 20px 0;
+  display: block;
+  width: 100%;
+  height: 30px;
+}
+.join-button {
+  padding: 15px 32px;
+  border-radius: 2px;
+  background-color: #454b1b;
+  color: #fafafa;
+  font-size: 100%;
+  margin: 20px auto 0 auto;
+}
+#testimonials {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+  color: white;
+}
+#testimonials h2 {
+  color: inherit;
+  margin-top: 30px;
+}
+.testimonial-container {
+  flex-basis: 100%;
+  padding: 10px 10px;
+  flex-grow: 1;
+  background-color: rgba(60, 60, 60, 0.6);
+  border: 2px solid #252525;
+  text-align: center;
+  width: 100%;
+}
+.testimonial-container h2 {
+  margin-bottom: 20px;
+}
+#testimonial-title {
+  text-align: center;
+  padding: 20px;
+}
+.rating {
+  color: yellow;
+  margin: 10px 0;
+}
 
-}
-#signup-form{
-    color: white;
-    padding:30px;
-    background-color:rgba(60,60,60,.6);
-}
-#signup h2{
-    color:#fafafa;
-    margin-bottom:20px;
-}
-.radio-buttons{
-    display:flex;
-    justify-content: space-between;
-    width:100%;
-}
-.text-input{
-    background: transparent;
-    color:#fafafa;
-    border-radius: 2px;
-    border:1px solid #fafafa;
-    margin:5px 0 20px 0;
-     display: block;
-    width:100%;
-    height:30px;
-}
-.join-button{
-    padding:15px 32px;
-    border-radius:2px;
-    background-color: #454b1b;
-    color:#fafafa;
-    font-size:100%;
-    margin:20px auto 0 auto;
-}
 /*footer styling*/
-#footer-icons{
-    text-align:center;
-    padding:20px 0 ;
-    display:flex;
-    list-style-type: none;
-    justify-content: space-evenly;
+#footer-icons {
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
 }
 #footer-icons a {
-    font-size:150%;
-    padding:5%;
-    color:#3a3a3a;
+  font-size: 150%;
+  padding: 5%;
+  color: #3a3a3a;
 }
-@media screen and (min-width:576px) {
-    #photos{
-        column-count: 2;
-        column-gap: 0;
-    }
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
 }
 @media screen and (min-width: 768px) {
-    /*For larger screens, display the nav as a horizontal menu*/
-    nav {
-        display: block;
-        position: relative;
-        box-shadow: none;
-        width: fit-content;
-        padding-right: 1rem;
-    }
-   #menu {
-    display:flex;
-   }
-   #menu > li {
+  /*For larger screens, display the nav as a horizontal menu*/
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+  #menu {
+    display: flex;
+  }
+  #menu > li {
     padding: 1rem;
-   }
-   .nav-toggle-label {
+  }
+  .nav-toggle-label {
     display: none;
-   }
-   #logo {
-    font-size: 280%;
+  }
+  #logo {
+    font-size: 160%;
     line-height: 75px;
     margin: 0 0.5rem;
-   }
-   main{
-    margin-top:90px;
-   }
-   #cover-text{
-    width:300px;
-    right:50px;
-   }
-   #benefits-physical, #benefits-mental{
-    display:flex;
+  }
+  main {
+    margin-top: 90px;
+  }
+  #cover-text {
+    width: 300px;
+    right: 50px;
+  }
+  #benefits-physical,
+  #benefits-mental {
+    display: flex;
     flex-direction: column;
-    width:100%;
-   }
-   #benefits-physical > div, #benefits-mental > div{
-    width:75%;
-   }
-   #benefits-mental > div{
+    width: 100%;
+  }
+  #benefits-physical > div,
+  #benefits-mental > div {
+    width: 75%;
+  }
+  #benefits-mental > div {
     text-align: end;
-    align-self:flex-end
-   }
-   #photos{
+    align-self: flex-end;
+  }
+  #photos {
     column-count: 3;
-   }
-   #signup{
+  }
+  #signup {
     background-position: center;
     position: relative;
-   }
-   #signup-form{
-    position:absolute;
-    max-width:400px;
-    left:10%;
-    top:150px;
-   }
-   .text-input{
-   
-    margin:2px 0 15px 0;
-    height:30px;
-    padding:0 10px;
-   }
-   .text-input:hover{
-    border-color:#f16c6b;
-   }
+  }
+  #signup-form {
+    position: absolute;
+    max-width: 400px;
+    left: 10%;
+    top: 150px;
+  }
+  .text-input {
+    margin: 2px 0 15px 0;
+    height: 30px;
+    padding: 0 10px;
+  }
+  .text-input:hover {
+    border-color: #f16c6b;
+  }
+  .testimonial-container {
+    flex-basis: 25%;
+    background-color: rgba(60, 60, 60, 0.8);
+  }
+  #testimonials {
+    background: url("../images/marathon.webp") no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
-@media screen and (min-width:992px){
-    #menu a:hover{
-        border-bottom: 1px solid #3a3a3a ;
-    }
-    #photos{
-        column-count: 4;
-    }
+@media screen and (min-width: 992px) {
+  #menu a:hover {
+    border-bottom: 1px solid #3a3a3a;
+  }
+  #photos {
+    column-count: 4;
+  }
+  #logo {
+    font-size: 280%;
+  }
 }
 
-@media screen and (min-width:1200px) {
-    #benefits{
-        display:flex;
-        flex-direction:row;
-    }
-    #benefits > div{
-        flex:1;
-    }
-    #benefits-physical, #benefits-mental, #benefits-image{
-        width:30%;
-    }
-    #benefits-mental{
-        order:2;
-    }
-    #benefits-mental > div{
-        align-self:flex-start;
-    }
-    #benefits-physical{
-        order:0;
-    }
-    #benefits-physical > div{
-        align-self:flex-end;
-    }
-    #benefits-image{
-        order:1;
-    }
+@media screen and (min-width: 1200px) {
+  #benefits {
+    display: flex;
+    flex-direction: row;
+  }
+  #benefits > div {
+    flex: 1;
+  }
+  #benefits-physical,
+  #benefits-mental,
+  #benefits-image {
+    width: 30%;
+  }
+  #benefits-mental {
+    order: 2;
+  }
+  #benefits-mental > div {
+    align-self: flex-start;
+  }
+  #benefits-physical {
+    order: 0;
+  }
+  #benefits-physical > div {
+    align-self: flex-end;
+  }
+  #benefits-image {
+    order: 1;
+  }
+  #testimonials {
+    padding: 80px;
+  }
 }
